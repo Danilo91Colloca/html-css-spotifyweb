@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+body {
+  color: #707070;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -49,6 +55,8 @@ li {
 .relative-p {
   position: relative;
 }
+
+
 /* //////////////////////////COLORS UTILITY\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .bg-color-black {
@@ -97,6 +105,33 @@ footer {
   height: calc(100% - 90px);
   width: calc(100% - 230px);
 }
+
+.logo-container {
+  padding: 20px;
+}
+.logo-container > img {
+  width: 140px;
+}
+
+.nav-side-b li {
+  border-left: 2px solid #C6FF5E;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.nav-side-b li > img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.nav-side-b {
+  margin-bottom: 20px;
+}
+
+
+
+
+
 
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
