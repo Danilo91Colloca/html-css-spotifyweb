@@ -23,6 +23,11 @@ li {
   max-width: 100%;
 }
 
+.flex-container {
+  display: flex;
+
+  border: 1px solid red;
+}
 .clearfix::after {
   content:"";
   clear: both;
@@ -37,6 +42,13 @@ li {
   float: right;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.relative-p {
+  position: relative;
+}
 /* //////////////////////////COLORS UTILITY\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .bg-color-black {
@@ -58,12 +70,33 @@ li {
 
 /* /////////////////////////////STYLE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
+.side-bar {
+  width:230px;
+  height: 100%;
+}
 
+header {
+  height: 70px;
+  width: 100%;
+}
 
+main {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
 
+footer {
+  position: absolute;
+  height: 70px;
+  width:100%;
+  bottom: 0px;
+}
 
-
-
+.box-r {
+  height: calc(100% - 90px);
+  width: calc(100% - 230px);
+}
 
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
