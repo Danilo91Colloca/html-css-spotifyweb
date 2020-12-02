@@ -27,13 +27,22 @@ li {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+  min-height: 100px;
+
 }
 
-.flex-container {
+.flex-container-column {
   display: flex;
+  flex-direction: column;
 
   border: 1px solid red;
 }
+.flex-container {
+  display: flex;
+
+  border: 1px solid orange;
+}
+
 .clearfix::after {
   content:"";
   clear: both;
@@ -75,16 +84,21 @@ li {
   background-color: #080B11;
 }
 
-
+.font-white {
+  color: #fff;
+}
+.over-white:hover {
+  color: #fff;
+}
 /* /////////////////////////////STYLE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .side-bar {
   width:230px;
-  height: 100%;
+  height: calc(100% - 90px);
 }
 
 header {
-  height: 70px;
+  height: 90px;
   width: 100%;
 }
 
@@ -96,7 +110,7 @@ main {
 
 footer {
   position: absolute;
-  height: 70px;
+  height: 90px;
   width:100%;
   bottom: 0px;
 }
@@ -114,9 +128,16 @@ footer {
 }
 
 .nav-side-b li {
+  border-left: 2px solid transparent;
+  padding-left: 20px;
+  line-height: 50px;
+}
+
+/* esempio colore se selezionato */
+.nav-side-b li:hover {
   border-left: 2px solid #C6FF5E;
   padding-left: 20px;
-  line-height: 30px;
+  line-height: 50px;
 }
 
 .nav-side-b li > img {
@@ -128,11 +149,55 @@ footer {
   margin-bottom: 20px;
 }
 
+.download > img {
+  height: 20px;
+  vertical-align: middle;
+}
 
+.user-container {
+  position: absolute;
+  bottom: 0px;
+}
 
+.playlist-container {
+  padding-left: 20px;
+}
 
+.playlist-title-section,
+.crea-pl-container {
+  margin-bottom: 10px;
+}
+.crea-pl-container > i {
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
+.playlist > ul > li {
+  margin: 20px 0px;
+}
+.user-container {
+  padding: 20px;
+}
+.download {
+  width: 180px;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
 
+.user-img > img {
+  height: 40px;
+  padding: 1px;
+  border-radius: 50%;
+  background-color: #757575;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.side-bar li:hover {
+  color: #fff;
+}
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* XS */
