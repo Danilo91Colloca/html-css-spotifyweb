@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* XS */
+@media screen (max-width: 767px) {
+
+
+}
+
+/* SM */
+
+@media screen  (min-width: 768px) {
+
+}
+
+/* MD */
+
+@media screen  (min-width: 992px) {
+
+}
+
+/* LG */
+
+@media screen  (min-width: 1200px) {
+
+}
