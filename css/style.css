@@ -120,6 +120,7 @@ footer {
   width: calc(100% - 230px);
 }
 
+/* side-bar */
 .logo-container {
   padding: 20px;
 }
@@ -198,6 +199,27 @@ footer {
 .side-bar li:hover {
   color: #fff;
 }
+/* end side-bar */
+/* hader */
+
+.button-upgrade-container {
+  line-height: 90px;
+  margin-right: 10px;
+}
+
+.button-upgrade-container > .button {
+  border: 1px solid #fff;
+  padding: 10px 40px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+
+.button-upgrade-container > .button:hover {
+  font-size: 15px;
+}
+
+
+
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* XS */
