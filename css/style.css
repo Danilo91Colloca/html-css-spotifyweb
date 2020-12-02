@@ -40,7 +40,7 @@ li {
 .flex-container {
   display: flex;
 
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .clearfix::after {
@@ -218,7 +218,32 @@ footer {
   font-size: 15px;
 }
 
+/* nav in main section */
+nav {
+  margin: 20px 0px;
+}
 
+nav > ul > li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+nav {
+  justify-content: center;
+}
+
+nav > ul > li > hr {
+  margin: 0 auto;
+  width: 35px;
+  border: 1px solid transparent;
+  margin-top: 5px;
+
+}
+nav > ul > li:hover hr {
+  margin: 0 auto;
+  width: 35px;
+  border: 1px solid #C6FF5E;
+  margin-top: 4px;
+}
 
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
