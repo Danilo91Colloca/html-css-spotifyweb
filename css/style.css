@@ -1,3 +1,5 @@
+/* //////////////////////////RESET/UTILITY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
 * {
   box-sizing: border-box;
   margin:0;
@@ -21,8 +23,40 @@ li {
   max-width: 100%;
 }
 
+.clearfix::after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+/* //////////////////////////COLORS UTILITY\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.bg-color-black {
+  background-color: #000;
+}
+
+.bg-color-gray {
+  background-color: #282828;
+}
+
+.bg-color-blackrussian {
+  background-color: #151921;
+}
+
+.bg-color-bunker {
+  background-color: #080B11;
+}
 
 
+/* /////////////////////////////STYLE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 
 
@@ -35,24 +69,36 @@ li {
 
 /* XS */
 @media screen (max-width: 767px) {
-
+  .hidden-xs {
+    display: none;
+  }
 
 }
 
 /* SM */
 
 @media screen  (min-width: 768px) {
+  .hidden-sm {
+    display: none;
+  }
 
 }
 
 /* MD */
 
 @media screen  (min-width: 992px) {
+  .hidden-md {
+    display: none;
+  }
 
 }
 
 /* LG */
 
 @media screen  (min-width: 1200px) {
+  .hidden-lg {
+    display: none;
+  }
+
 
 }
