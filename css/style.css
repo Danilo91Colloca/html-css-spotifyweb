@@ -79,6 +79,10 @@ li {
 .text-center {
   text-align: center;
 }
+
+.label-title-box {
+  width: 190px;
+}
 /* //////////////////////////COLORS UTILITY\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .bg-color-black {
