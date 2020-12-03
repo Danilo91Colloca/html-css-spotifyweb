@@ -84,10 +84,6 @@ a {
   text-align: center;
 }
 
-.label-title-box {
-  max-width: 190px;
-}
-
 .circular-img > img{
   border-radius: 50%;
 }
@@ -142,13 +138,13 @@ header {
 
 main {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   overflow-y: scroll;
 }
 
 footer {
   height: 90px;
-  width:100%;
+  min-width:100%;
 }
 
 
@@ -270,9 +266,10 @@ nav > ul > li {
 }
 nav {
   margin-top: 110px;
-  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  flex-wrap: nowrap;
+  font-size: 12px;
 }
 
 nav > ul > li > hr {
@@ -288,12 +285,12 @@ nav > ul > li:hover hr {
 
 .albums-hr {
   max-width: 100%;
-  margin-left: 20px;
-  flex-wrap: nowrap;
+  margin-left: 15px;
 }
 
 .img-album-container {
-  margin-right: 15px;
+  margin-right: auto;
+  padding-right: 15px;
 }
 .img-box {
   max-width: 190px;
@@ -308,9 +305,16 @@ nav > ul > li:hover hr {
 
 .img-album-container img:hover {
   opacity: 0.2;
-
 }
 
+.label-title-box {
+  max-width: 190px;
+}
+
+.albums-hr-2 {
+  margin-left: 20px;
+  width: 30%;
+}
 /* footer */
 .album-miniature-container {
   max-width: 200px;
@@ -340,30 +344,14 @@ nav > ul > li:hover hr {
 
 /* MD */
 
-@media screen  and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .hidden-md {
     display: none;
-  }
-
-  nav {
-    flex-wrap: wrap;
-  }
-
-  .albums-hr {
-    margin-left: 15px;
-    flex-wrap: wrap;
   }
   .img-box {
     max-width: 140px;
 
   }
-  .label-title-box {
-    max-width: 130px;
-  }
-
-
-
-
 }
 
 /* SM */
@@ -372,16 +360,6 @@ nav > ul > li:hover hr {
   .hidden-sm {
     display: none;
   }
-  .albums-hr {
-    max-width: 100%;
-    margin-left: 15px;
-    flex-wrap: wrap;
-  }
-  .img-box {
-    max-width: 160px;
-
-  }
-
 
 
 
@@ -429,6 +407,14 @@ nav > ul > li:hover hr {
     border-radius: 50%;
     background-color: #757575;
     margin-right: 5px;
+  }
+
+  .box-r {
+    width: calc(100% - 50px);
+  }
+
+  header {
+    width: calc(100% - 50px);
   }
 
 }
