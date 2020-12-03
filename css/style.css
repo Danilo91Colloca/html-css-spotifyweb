@@ -117,6 +117,7 @@ a {
 .principal-section {
   width: 100%;
   height: calc(100% - 90px);
+  overflow: hidden;
 }
 .side-bar {
   width:230px;
@@ -131,15 +132,13 @@ header {
 
 main {
   height: 100%;
-  overflow-y: auto;
   width: 100%;
+  overflow-y: auto;
 }
 
 footer {
-  position: absolute;
   height: 90px;
   width:100%;
-  bottom: 0px;
 }
 
 .box-r {
@@ -156,6 +155,8 @@ footer {
 }
 .side-top {
   height: calc(100% - 120px);
+  min-height: 450px;
+  overflow: hidden;
 }
 
 .side-bottom {
@@ -189,7 +190,6 @@ footer {
   vertical-align: middle;
 }
 
-
 .playlist-container {
   padding-left: 20px;
 }
@@ -204,14 +204,10 @@ footer {
   margin-right: 5px;
 }
 
-.playlist: {
-  overflow-y: auto;
-  min-height: 600px;
-
-}
 .playlist > ul > li {
   margin: 20px 0px;
 }
+
 .user-container {
   padding: 20px;
 }
