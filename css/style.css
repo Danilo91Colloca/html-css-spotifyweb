@@ -137,14 +137,12 @@ a {
 header {
   height: 90px;
   width: calc(100% - 230px);
-  min-width: 300px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 main {
   height: 100%;
   width: 100%;
-  min-width: 500px;
   overflow-y: scroll;
 }
 
@@ -279,7 +277,7 @@ nav {
 
 nav > ul > li > hr {
   margin: 0 auto;
-  width: 35px;
+  max-width: 35px;
   border: 1px solid transparent;
   margin-top: 5px;
 }
@@ -348,17 +346,21 @@ nav > ul > li:hover hr {
   }
 
   nav {
-    margin-top: 110px;
-    justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
   }
 
   .albums-hr {
-    max-width: 100%;
-    margin-left: 20px;
+    margin-left: 15px;
     flex-wrap: wrap;
   }
+  .img-box {
+    max-width: 140px;
+
+  }
+  .label-title-box {
+    max-width: 130px;
+  }
+
 
 
 
@@ -370,6 +372,16 @@ nav > ul > li:hover hr {
   .hidden-sm {
     display: none;
   }
+  .albums-hr {
+    max-width: 100%;
+    margin-left: 15px;
+    flex-wrap: wrap;
+  }
+  .img-box {
+    max-width: 160px;
+
+  }
+
 
 
 
