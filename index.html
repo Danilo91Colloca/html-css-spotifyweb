@@ -18,21 +18,38 @@
         <div class="side-bar bg-color-black float-l padding-default flex-    column">
           <!-- logo side-bar -->
           <div class="side-top">
-            <div class="logo-container">
-              <img src="img/icon/logo.svg" alt="">
+            <div class="logo-container  hidden-xs">
+              <img src="img/icon/logo.svg" alt="" class="">
+            </div>
+            <div class="xs-logo-sidebar font-white hidden-sm hidden-md">
+              <i class="fa fa-spotify" aria-hidden="true"></i>
             </div>
             <!-- end logo side-bar -->
             <!-- navigation side-bar -->
             <div class="nav-side-b">
               <ul>
-                <li><img src="img/icon/home.svg" alt=""> Home</li>
-                <li><img src="img/icon/search.svg" alt=""> Cerca</li>
-                <li><img src="img/icon/libreria.svg" alt=""> La tua libreria</li>
+                <li>
+                  <img src="img/icon/home.svg" alt="">
+                  <span class="hidden-xs">
+                    Home
+                  </span>
+                </li>
+                <li><img src="img/icon/search.svg" alt="">
+                  <span class="hidden-xs">
+                    Cerca
+                  </span>
+                </li>
+                <li>
+                  <img src="img/icon/libreria.svg" alt="">
+                  <span class="hidden-xs">
+                    La tua libreria
+                  </span>
+                </li>
               </ul>
             </div>
             <!-- end navigation side-bar -->
             <!-- playlist -->
-            <div class="playlist-container">
+            <div class="playlist-container hidden-xs ">
               <div class="playlist-title-section">
                 <span class="font-white">PLAYLIST</span>
               </div>
@@ -58,12 +75,16 @@
               <div class="download-app">
                 <div class="download">
                   <img src="img/icon/download.svg" alt="">
-                  <a href="#" class="over-white">Install app</a>
+                  <a href="#" class="over-white hidden-xs">
+                    Install app
+                  </a>
                 </div>
                 <div class="user">
                   <div class="user-img">
                     <img src="img/icon/profile.svg" alt="">
-                    <span class="font-white">John Doe</span>
+                    <span class="font-white hidden-xs">
+                      John Doe
+                    </span>
                   </div>
                 </div>
               </div>
@@ -75,7 +96,9 @@
           <main class="bg-color-blackrussian">
             <header class="fixed ">
               <div class="button-upgrade-container float-r">
-                <a href="#" class="button font-white">EFFETTUA L' UPGRADE</a>
+                <a href="#" class="button font-white">
+                  EFFETTUA L' UPGRADE
+                </a>
               </div>
             </header>
             <!-- NAVBAR ROW -->
