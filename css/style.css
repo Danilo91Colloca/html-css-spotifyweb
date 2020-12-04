@@ -318,18 +318,23 @@ nav > ul > li:hover hr {
 /* footer */
 .footer-row {
   max-width: 100%;
-  padding: 0px 20px;
-  overflow: hidden;
-  margin-top: 10px;
+  padding: 5px 20px;
+  justify-content: space-between;
 }
 
-.footer-col {
-  width: calc((100% / 12) * 4)
+.footer-col-lateral {
+  flex:2;
   padding-right: 15px;
   max-height: 85px;
   border: 1px solid red;
   align-content: center;
-
+}
+.footer-col-center {
+  flex:6;
+  padding-right: 15px;
+  max-height: 85px;
+  border: 1px solid pink;
+  justify-content: center;
 }
 
 .album-mini-img {
@@ -354,6 +359,43 @@ nav > ul > li:hover hr {
 .icon-folder-like > .icon-foot-left  i {
   margin-right: 5px;
 }
+.player {
+  width: 100%;
+}
+.player-cmd {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+
+}
+.player-cmd > li {
+  padding: 0 15px;
+
+
+}
+.player-cmd > li.play-resize {
+  font-size: 30px;
+}
+.time {
+  padding: 0 5px;
+  font-size: 12px;
+}
+.play-bar-row {
+  justify-content: center;
+  align-items: center;
+}
+.play-bar {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background-color:  #707070;
+  width: 70%;
+  height: 4px;
+  vertical-align: middle;
+  margin: 0px 15px;
+  border-radius: 5px;
+}
+
 
 
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
