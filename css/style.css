@@ -289,10 +289,11 @@ nav > ul > li:hover hr {
 .albums-hr {
   max-width: 100%;
   margin-left: 15px;
+
 }
 
 .img-album-container {
-  margin-right: auto;
+  /* margin-right: 15px; */
   padding-right: 15px;
 }
 .img-box {
@@ -315,9 +316,9 @@ nav > ul > li:hover hr {
   max-width: 180px;
 }
 
-.albums-hr-2 {
+/* .albums-hr {
   margin-left: 15px;
-  width: 30%;
+  /* width: 30%; */ */
 }
 /* footer */
 .footer-row {
@@ -348,6 +349,10 @@ nav > ul > li:hover hr {
   display: inline-block;
 }
 
+.img-album-container {
+  width: calc((100% / 12) * 2)
+}
+
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* MD */
@@ -357,16 +362,17 @@ nav > ul > li:hover hr {
     display: none;
   }
 
-  .img-album-container {
-    margin-right: none;
-    padding-right: 15px;
+  .img-box,
+  .label-title-box {
+    max-width: 180px;
   }
 
+  .albums-hr {
+    flex-wrap: wrap;
 
-
+  }
   .img-album-container {
-    margin-right: 0;
-    padding-right: 15px;
+    width: calc((100% / 12) * 3)
   }
 
 }
@@ -376,6 +382,19 @@ nav > ul > li:hover hr {
 @media screen  and (max-width: 768px) {
   .hidden-sm {
     display: none;
+  }
+
+  .img-box,
+  .label-title-box {
+    max-width: 200px;
+  }
+
+  .albums-hr {
+    flex-wrap: wrap;
+
+  }
+  .img-album-container {
+    width: calc((100% / 12) * 5)
   }
 
 
