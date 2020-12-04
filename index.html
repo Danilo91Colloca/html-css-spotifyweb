@@ -12,10 +12,10 @@
   </head>
   <body>
     <!-- TOTAL PAGE -->
-    <div class="wrapper ">
+    <div class="wrapper bg-color-blackrussian">
       <!-- SID-BAR (left) -->
       <div class="principal-section clearfix">
-        <div class="side-bar bg-color-black float-l padding-default flex-    column">
+        <div class="side-bar bg-color-black float-l padding-default flex-    column hidden-height90">
           <!-- logo side-bar -->
           <div class="side-top">
             <div class="logo-container  hidden-xs">
@@ -28,18 +28,20 @@
             <!-- navigation side-bar -->
             <div class="nav-side-b">
               <ul>
-                <li>
+                <li class="over-white">
                   <img src="img/icon/home.svg" alt="">
+                  <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
                   <span class="hidden-xs">
                     Home
                   </span>
-                </li>
-                <li><img src="img/icon/search.svg" alt="">
+                </li class="over-white">
+                <li >
+                  <img src="img/icon/search.svg" alt="">
                   <span class="hidden-xs">
                     Cerca
                   </span>
                 </li>
-                <li>
+                <li class="over-white">
                   <img src="img/icon/libreria.svg" alt="">
                   <span class="hidden-xs">
                     La tua libreria
@@ -49,7 +51,7 @@
             </div>
             <!-- end navigation side-bar -->
             <!-- playlist -->
-            <div class="playlist-container hidden-xs ">
+            <div class="playlist-container hidden-xs padding-l20 ">
               <div class="playlist-title-section">
                 <span class="font-white">PLAYLIST</span>
               </div>
@@ -57,26 +59,27 @@
                 <i class="fa fa-plus-square" aria-hidden="true"></i>
                 <span class="">Crea Playlist</span>
               </div>
-              <div class="playlist">
-                <ul>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                </ul>
-              </div>
+              <ul class="scroll-list">
+                <li class="over-white">Nome Playlist</li>
+                <li class="over-white">Nome Playlist</li>
+                <li class="over-white">Nome Playlist</li>
+                <li class="over-white">Nome Playlist</li>
+                <li class="over-white">Nome Playlist</li>
+                <li class="over-white">Nome Playlist</li>
+                <li class="over-white">Nome Playlist</li>
+              </ul>
             </div>
           </div>
             <!-- end playlist -->
           <div class="side-bottom padding-default">
-            <div class="user-container ">
+            <div class="user-container padding-l20 ">
               <div class="download-app">
-                <div class="download">
-                  <img src="img/icon/download.svg" alt="">
-                  <a href="#" class="over-white hidden-xs">
-                    Install app
+                <div class="download ">
+                  <a href="#" class=" link-downl">
+                    <img src="img/icon/download.svg" alt="">
+                    <span class="hidden-xs over-white">
+                      Install app
+                    </span>
                   </a>
                 </div>
                 <div class="user">
@@ -92,7 +95,7 @@
           </div>
         </div>
         <!-- END SID-BAR (left) -->
-        <div class="box-r float-l">
+        <div class="box-r float-l hidden-height90">
           <main class="bg-color-blackrussian">
             <header class="fixed hidden-height90">
               <div class="button-upgrade-container float-r">
@@ -102,7 +105,7 @@
               </div>
             </header>
             <!-- NAVBAR ROW -->
-            <nav class="flex ">
+            <nav class="flex">
               <ul>
                 <li class="over-white">IN EVIDENZA <hr></li>
                 <li class="over-white">PODCAST <hr></li>
