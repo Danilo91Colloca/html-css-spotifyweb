@@ -40,7 +40,6 @@ a {
 }
 .flex {
   display: flex;
-  /* border: 1px solid orange; */
 }
 
 .clearfix::after {
@@ -272,7 +271,6 @@ nav {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  font-size: 12px;
 }
 
 nav > ul > li > hr {
@@ -289,13 +287,14 @@ nav > ul > li:hover hr {
 .albums-hr {
   max-width: 100%;
   margin-left: 15px;
-
 }
 
 .img-album-container {
-  /* margin-right: 15px; */
   padding-right: 15px;
+  width: calc((100% / 12) * 2)
+
 }
+
 .img-box {
   max-width: 180px;
   background-image: url("../img/icon/play.png");
@@ -303,9 +302,9 @@ nav > ul > li:hover hr {
   background-size: 50%;
   background-position:center;
 }
+
  .img-box > img {
   max-width: 100%;
-
 }
 
 .img-album-container img:hover {
@@ -316,25 +315,26 @@ nav > ul > li:hover hr {
   max-width: 180px;
 }
 
-/* .albums-hr {
-  margin-left: 15px;
-  /* width: 30%; */ */
-}
 /* footer */
 .footer-row {
+  max-width: 100%;
   padding: 0px 20px;
+  overflow: hidden;
+  margin-top: 10px;
 }
-.album-miniature-container {
-  max-width: 200px;
-  margin-top: 15px;
+
+.footer-col {
+  width: calc((100% / 12) * 4)
+  padding-right: 15px;
+  max-height: 85px;
+  border: 1px solid red;
+  align-content: center;
 
 }
+
 .album-mini-img {
-  display: inline-block;
   max-width: 50px;
   margin-right: 5px;
-  vertical-align: middle;
-  line-height: 50px;
 }
 .album-mini-img > img {
   width: 100%;
@@ -345,13 +345,16 @@ nav > ul > li:hover hr {
 .subtitle-mini-album {
   font-size: 10px;
 }
-.box-titl-minialbum {
-  display: inline-block;
+
+.icon-folder-like {
+  margin-left: 15px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.icon-folder-like > .icon-foot-left  i {
+  margin-right: 5px;
 }
 
-.img-album-container {
-  width: calc((100% / 12) * 2)
-}
 
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
