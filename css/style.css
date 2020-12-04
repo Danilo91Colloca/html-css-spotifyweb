@@ -333,7 +333,7 @@ nav > ul > li:hover hr {
   flex:6;
   padding-right: 15px;
   max-height: 85px;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   justify-content: center;
 }
 
@@ -375,6 +375,7 @@ nav > ul > li:hover hr {
 }
 .player-cmd > li.play-resize {
   font-size: 30px;
+  font-weight: lighter;
 }
 .time {
   padding: 0 5px;
@@ -396,7 +397,38 @@ nav > ul > li:hover hr {
   border-radius: 5px;
 }
 
+.play-position-20perc {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 20%;
+  height: 4px;
+  vertical-align: middle;
+  margin: 0px ;
+  border-radius: 5px;
+}
 
+.play-bar:hover .play-position-20perc{
+  background-color: #C6FF5E;
+}
+
+.play-bar:hover .playhead {
+  display:inline-block;
+
+}
+.playhead {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 0;
+}
 
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
