@@ -161,10 +161,13 @@ footer {
 }
 .side-top {
   height: calc(100% - 120px);
-  min-height: 450px;
-  overflow-y: hidden;
+  overflow-y:hidden;
 }
 
+.playlist > ul {
+  min-height: 300px;
+  overflow-y: auto;
+}
 .side-bottom {
   height: 120px;
 }
@@ -293,14 +296,15 @@ nav > ul > li:hover hr {
   padding-right: 15px;
 }
 .img-box {
-  max-width: 190px;
+  max-width: 180px;
   background-image: url("../img/icon/play.png");
   background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center;
+  background-size: 50%;
+  background-position:center;
 }
-.img-album-container > .img-box > img {
+ .img-box > img {
   max-width: 100%;
+
 }
 
 .img-album-container img:hover {
@@ -308,14 +312,17 @@ nav > ul > li:hover hr {
 }
 
 .label-title-box {
-  max-width: 190px;
+  max-width: 180px;
 }
 
 .albums-hr-2 {
-  margin-left: 20px;
+  margin-left: 15px;
   width: 30%;
 }
 /* footer */
+.footer-row {
+  padding: 0px 20px;
+}
 .album-miniature-container {
   max-width: 200px;
   margin-top: 15px;
@@ -340,6 +347,7 @@ nav > ul > li:hover hr {
 .box-titl-minialbum {
   display: inline-block;
 }
+
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* MD */
@@ -348,10 +356,19 @@ nav > ul > li:hover hr {
   .hidden-md {
     display: none;
   }
-  .img-box {
-    max-width: 140px;
 
+  .img-album-container {
+    margin-right: none;
+    padding-right: 15px;
   }
+
+
+
+  .img-album-container {
+    margin-right: 0;
+    padding-right: 15px;
+  }
+
 }
 
 /* SM */
@@ -360,6 +377,7 @@ nav > ul > li:hover hr {
   .hidden-sm {
     display: none;
   }
+
 
 
 
@@ -416,5 +434,8 @@ nav > ul > li:hover hr {
   header {
     width: calc(100% - 50px);
   }
+
+
+
 
 }
