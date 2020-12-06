@@ -85,7 +85,7 @@ a {
   border-radius: 50%;
 }
 
-/* //////////////////////////COLORS UTILITY\\\\\\\\\\\\\\\\\\\\\\\ */
+/* //////////////////////////COLORS/STYLE UTILITY\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .bg-color-black {
   background-color: #000;
@@ -112,6 +112,9 @@ a {
   opacity:inherit;
 }
 
+.over-underline:hover {
+  text-decoration: underline;
+}
 /* /////////////////////////////STYLE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .main-page-container {
@@ -119,17 +122,17 @@ a {
   height: calc(100% - 90px);
 }
 
+.side-bar {
+  width:230px;
+  height: 100%;
+  overflow-y: hidden;
+}
+
 .box-r {
   height: 100%;
   width: calc(100% - 230px);
   overflow-y: scroll;
 
-}
-
-.side-bar {
-  width:230px;
-  height: 100%;
-  overflow-y: hidden;
 }
 
 header {
@@ -157,14 +160,8 @@ footer {
   display: none;
 }
 
-.scroll-list {
-  height: calc(100% - 120px);
-  overflow-y: auto;
-}
-
-.side-bottom {
-  padding: 5px;
-  height: 120px;
+.nav-side-b {
+  margin-bottom: 20px;
 }
 
 .nav-side-b li {
@@ -173,10 +170,9 @@ footer {
   line-height: 30px;
 }
 
-
 /* esempio colore se selezionato */
 
-.nav-side-b li:hover {
+.nav-side-b li:active {
   border-left: 2px solid #C6FF5E;
   padding-left: 20px;
   line-height: 30px;
@@ -188,14 +184,14 @@ footer {
   opacity: 0.3;
 }
 
-.nav-side-b {
-  margin-bottom: 20px;
+.scroll-list {
+  height: calc(100% - 120px);
+  overflow-y: auto;
 }
 
-.side-bar li:hover img,
-.download a:hover img {
-  color: #fff;
-  opacity: 1;
+.side-bottom {
+  padding: 5px;
+  height: 120px;
 }
 
 .download .link-downl img {
@@ -235,7 +231,15 @@ footer {
   margin-right: 5px;
 }
 
+.side-bar li:hover img,
+.side-bar li:hover span,
+.download a:hover img {
+  color: #fff;
+  opacity: 1;
+}
+
 /* end side-bar */
+
 /* hader */
 
 .button-upgrade-container {
@@ -255,9 +259,11 @@ footer {
 }
 
 /* nav in main section */
-
 nav {
-  margin: 20px 0px;
+  margin-top: 110px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0px;
 }
 
 nav > ul > li {
@@ -265,21 +271,31 @@ nav > ul > li {
   margin: 0px 10px;
 }
 
-nav {
-  margin-top: 110px;
-  text-align: center;
-  justify-content: center;
+nav > ul > li a {
+  cursor: pointer;
 }
 
 nav > ul > li > hr {
   margin: 0 auto;
   max-width: 35px;
   border: 1px solid transparent;
-  margin-top: 5px;
+  /* border: 1px solid #C6FF5E; */
+  /* margin-top: 5px; */
+
 }
 
-nav > ul > li:hover hr {
+nav > ul > li:hover a {
+  color: #fff;
+}
+
+nav > ul > li a:focus + hr {
   border: 1px solid #C6FF5E;
+  display: block;
+}
+
+nav > ul > li a:focus + a {
+  color: #fff;
+  display: block;
 }
 
 .albums-hr {
@@ -289,6 +305,7 @@ nav > ul > li:hover hr {
 
 .img-album-container {
   padding-right: 15px;
+  margin-bottom: 10px;
   width: calc((100% / 12) * 2)
 }
 
@@ -466,14 +483,13 @@ nav > ul > li:hover hr {
     display: none;
   }
 
+  .albums-hr {
+    flex-wrap: wrap;
+  }
+
   .img-box,
   .label-title-box {
     max-width: 180px;
-  }
-
-  .albums-hr {
-    flex-wrap: wrap;
-
   }
 
   .img-album-container {
@@ -494,14 +510,13 @@ nav > ul > li:hover hr {
     display: none;
   }
 
+  .albums-hr {
+    flex-wrap: wrap;
+  }
+
   .img-box,
   .label-title-box {
     max-width: 200px;
-  }
-
-  .albums-hr {
-    flex-wrap: wrap;
-
   }
 
   .img-album-container {
@@ -545,16 +560,20 @@ nav > ul > li:hover hr {
   }
 
   /* esempio colore se selezionato */
-
   .nav-side-b li:hover {
-    border-left: 2px solid #C6FF5E;
+    border-left: 2px solid transparent;
+
     padding-left: 10px;
     line-height: 30px;
   }
 
+  .nav-side-b li:active {
+    border-left: 2px solid #C6FF5E;
+  }
+
   .user-container {
     margin:0;
-    padding: 0px;
+    padding: 0px 5px;
   }
 
   .download {
@@ -566,7 +585,12 @@ nav > ul > li:hover hr {
     padding: 2px;
     border-radius: 50%;
     background-color: #757575;
-    margin-right: 5px;
+  }
+
+  .user-img:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px #fff;
   }
 
   .box-r {
@@ -575,6 +599,26 @@ nav > ul > li:hover hr {
 
   header {
     width: calc(100% - 50px);
+  }
+
+  nav {
+    font-size: 12px;
+  }
+
+  .main-title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .label-title-box {
+    font-size: 12px;
+  }
+
+  .label-subtitle {
+    font-size: 10px;
   }
 
   .time {
@@ -594,26 +638,6 @@ nav > ul > li:hover hr {
     font-size: 20px;
   }
 
-  nav {
-    font-size: 12px;
-  }
-
-  .label-title-box {
-    font-size: 12px;
-  }
-
-  .label-subtitle {
-    font-size: 10px;
-  }
-
-  .main-title {
-    font-size: 18px;
-  }
-
-  .subtitle {
-    font-size: 13px;
-  }
-
   .controllers > ul > li {
     font-size: 13px;
     margin-right: 10px;
@@ -621,6 +645,7 @@ nav > ul > li:hover hr {
 }
 
 /* under xs */
+
 @media screen and (max-width: 360px) {
   .hidden-underxs {
     display: none;
@@ -628,6 +653,10 @@ nav > ul > li:hover hr {
 
   .player-cmd {
     margin-top: 15px;
+  }
+
+  .footer-dx {
+    transform: translate(0, -20%);
   }
 
   .controllers  {
@@ -639,9 +668,6 @@ nav > ul > li:hover hr {
     display: block;
   }
 
-  .footer-dx {
-    transform: translate(0, -20%);
-  }
 }
 
 /* height */
