@@ -243,10 +243,6 @@ footer {
   opacity: 1;
 }
 
-/* nav > ul > li > a:focus {
-  color: #fff;
-} */
-
 /* end side-bar */
 
 /* hader */
@@ -551,22 +547,10 @@ nav > ul > li a:focus + hr {
     padding: 0px 10px;
   }
 
-  .nav-side-b li {
-    border-left: 2px solid transparent;
-    padding-left: 10px;
-    line-height: 30px;
-  }
-
-  /* esempio colore se selezionato */
-  .nav-side-b li:hover {
-    border-left: 2px solid transparent;
-
-    padding-left: 10px;
-    line-height: 30px;
-  }
-
-  .nav-side-b li:active {
-    border-left: 2px solid #C6FF5E;
+  .nav-side-b li  img {
+    width: 20px;
+    opacity: 0.3;
+    margin-left: 15px;
   }
 
   .user-container {
