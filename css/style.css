@@ -99,10 +99,6 @@ a {
   background-color: #151921;
 }
 
-.bg-color-bunker {
-  background-color: #080B11;
-}
-
 .font-white {
   color: #fff;
 }
@@ -181,6 +177,10 @@ footer {
   vertical-align: middle;
   opacity: 0.3;
   margin-left: 20px;
+}
+
+.nav-side-b > ul:first-child {
+  transform-style: flat;
 }
 
 .nav-side-b li a{
@@ -467,7 +467,6 @@ nav > ul > li a:focus + hr {
   margin-right: 15px;
 }
 
-
 /* ///////////////////////////MEDIA QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* MD */
@@ -523,6 +522,7 @@ nav > ul > li a:focus + hr {
     border-radius: 25px;
     font-size: 10px;
   }
+
 }
 
 /* XS */
@@ -624,6 +624,7 @@ nav > ul > li a:focus + hr {
     font-size: 13px;
     margin-right: 10px;
   }
+
 }
 
 /* under xs */
@@ -658,4 +659,5 @@ nav > ul > li a:focus + hr {
   .hidden-height90 {
     display: none;
   }
+
 }
