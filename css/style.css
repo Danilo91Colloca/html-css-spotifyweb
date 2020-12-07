@@ -164,24 +164,27 @@ footer {
   margin-bottom: 20px;
 }
 
-.nav-side-b li {
-  border-left: 2px solid transparent;
-  padding-left: 20px;
-  line-height: 30px;
+.vertical-line {
+  content: "";
+  border-left: 3px solid #C6FF5E;
+  height: 100%;
+  margin-right: -3px;
+  display: none;
 }
 
-/* esempio colore se selezionato */
-
-.nav-side-b li:active {
-  border-left: 2px solid #C6FF5E;
-  padding-left: 20px;
-  line-height: 30px;
+.nav-side-b > ul > li a:focus .vertical-line {
+ display: inline;
 }
 
 .nav-side-b li  img {
   width: 20px;
   vertical-align: middle;
   opacity: 0.3;
+  margin-left: 20px;
+}
+
+.nav-side-b li a{
+  line-height: 30px;
 }
 
 .scroll-list {
@@ -232,11 +235,17 @@ footer {
 }
 
 .side-bar li:hover img,
-.side-bar li:hover span,
-.download a:hover img {
+.side-bar li:hover .menu,
+.download a:hover img,
+.nav-side-b > ul > li > a:focus img,
+.nav-side-b > ul > li > a:focus {
   color: #fff;
   opacity: 1;
 }
+
+/* nav > ul > li > a:focus {
+  color: #fff;
+} */
 
 /* end side-bar */
 
@@ -271,30 +280,19 @@ nav > ul > li {
   margin: 0px 10px;
 }
 
-nav > ul > li a {
-  cursor: pointer;
-}
-
 nav > ul > li > hr {
   margin: 0 auto;
   max-width: 35px;
   border: 1px solid transparent;
-  /* border: 1px solid #C6FF5E; */
-  /* margin-top: 5px; */
-
 }
 
-nav > ul > li:hover a {
+nav > ul > li:hover a,
+nav > ul > li > a:focus {
   color: #fff;
 }
 
 nav > ul > li a:focus + hr {
   border: 1px solid #C6FF5E;
-  display: block;
-}
-
-nav > ul > li a:focus + a {
-  color: #fff;
   display: block;
 }
 
